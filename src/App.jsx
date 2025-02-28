@@ -1,12 +1,23 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import TaskInput from './components/TaskInput'
 import TaskItem from './components/TaskItem'
 import TaskFilter from './components/TaskFilter'
 import './styles/global.css'
 
 function App() {
-  const [tasks, setTasks] = useState([]);
+  // cargar las tareas del localStorage
+  const [tasks, setTasks] = useState( () => {
+    const savedTasks = localStorage.getItem('tasks');
+    return savedTasks ? JSON.parse(savedTasks) : [];
+  }, []);
+
   const [filter, setFilter] = useState('all');
+
+
+  // guardar las tareas en el localStorage
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }, [tasks]);
 
   const addTask = (task) => {
     setTasks([...tasks, {id: Date.now(), text: task, completed: false}]);
