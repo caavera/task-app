@@ -15,25 +15,21 @@ It allows users to add, complete, delete, and filter tasks, with persistence usi
 To clone and run the project locally, follow these steps:
 
 1️⃣ **Clone the repository**  
-   This command downloads the project to your local machine:
    ```
    git clone https://github.com/caavera/task-app.git
    ```
 
 2️⃣ **Navigate to the project folder**  
-   Move into the newly created directory:
    ```
    cd task-app
    ```
 
 3️⃣ **Install dependencies**  
-   Install all required packages from `package.json`:
    ```
    npm install
    ```
 
 4️⃣ **Run the development server**  
-   Start the application in development mode:
    ```
    npm run dev
    ```
