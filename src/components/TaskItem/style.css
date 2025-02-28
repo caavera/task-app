@@ -1,12 +1,51 @@
+ul {
+    padding: 0;
+    /* Elimina cualquier padding extra en la lista */
+    margin: 0;
+    /* Asegura que no haya márgenes adicionales */
+    list-style: none;
+    /* Elimina los estilos de lista predeterminados */
+}
+
 li {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size : 10px;
-    padding: 5px;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff;
+    margin-bottom: 12px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+span {
+    flex-grow: 1;
+    /* Hace que el texto ocupe el espacio disponible */
+    font-size: 18px;
+    /* Más grande para mejor lectura */
 }
 
 .completed {
     text-decoration: line-trhough;
     color: gray;
+}
+
+.delete-button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.delete-button:hover {
+    background: darkred;
 }

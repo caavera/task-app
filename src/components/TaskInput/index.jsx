@@ -19,7 +19,7 @@ function TaskInput({ onAddTask }) {
                 value={task}
                 onChange={(event) => setTask(event.target.value)}
             />
-            <button type='submit' > Agregar </button>  
+            <button type='submit' className='add-button' > Agregar </button>  
         </form>
     )
 }

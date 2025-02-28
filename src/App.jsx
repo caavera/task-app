@@ -16,14 +16,18 @@ function App() {
     ));
   }
 
+  const deleteTask = (taskId) => {
+    setTasks(tasks.filter(task => task.id !== taskId))
+  }
+
   return (
     <>
-      <div>
+      <div className='container'>
         <h1>Lista de tareas</h1>
         <TaskInput onAddTask={addTask} />
         <ul>
           {tasks.map( (task) => (
-            <TaskItem key={task.id} task={task} onToggle={toggleTask} />
+            <TaskItem key={task.id} task={task} onToggle={toggleTask} onDelete={deleteTask} />
           ))}
         </ul>
       </div>
