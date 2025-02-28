@@ -1,12 +1,69 @@
-# React + Vite
+# 📝 Task List with React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **Task List** project built with **React** and Vite.  
+It allows users to add, complete, delete, and filter tasks, with persistence using `localStorage`.
 
-Currently, two official plugins are available:
+## 🚀 Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React + Vite
+- Context API for state management
+- Pure CSS for styling
+- `localStorage` for data persistence
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To clone and run the project locally, follow these steps:
+
+1️⃣ **Clone the repository**  
+   This command downloads the project to your local machine:
+   ```
+   git clone https://github.com/caavera/task-app.git
+   ```
+
+2️⃣ **Navigate to the project folder**  
+   Move into the newly created directory:
+   ```
+   cd task-app
+   ```
+
+3️⃣ **Install dependencies**  
+   Install all required packages from `package.json`:
+   ```
+   npm install
+   ```
+
+4️⃣ **Run the development server**  
+   Start the application in development mode:
+   ```
+   npm run dev
+   ```
+
+5️⃣ **Open the app in your browser**  
+   The app will be available at the local development URL (usually `http://localhost:5173`).
+
+## 🎯 Features
+
+✅ Add tasks  
+✅ Mark tasks as completed  
+✅ Delete tasks  
+✅ Filter tasks (`All`, `Completed`, `Pending`)  
+✅ Persistent storage with `localStorage`  
+✅ Modern and responsive UI  
+
+## 🤝 Contributing
+
+Contributions are welcome! To contribute:
+
+```
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/new-feature`)
+3. Make your changes and commit (`git commit -m "Added new feature"`)
+4. Push your changes (`git push origin feature/new-feature`)
+5. Open a Pull Request
+```
+
+## 📜 License
+
+This project is licensed under the **MIT License**. Feel free to use and modify it.
+
+---
