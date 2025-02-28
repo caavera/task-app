@@ -1,0 +1,12 @@
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size : 10px;
+    padding: 5px;
+}
+
+.completed {
+    text-decoration: line-trhough;
+    color: gray;
+}
